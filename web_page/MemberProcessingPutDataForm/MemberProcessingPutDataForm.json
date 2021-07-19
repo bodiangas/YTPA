@@ -1,0 +1,338 @@
+{
+  "modelVersion" : "2.0",
+  "id" : "MemberProcessingPutDataForm",
+  "name" : "MemberProcessingPutDataForm",
+  "lastUpdate" : 1626685693316,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Données"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "excelContent"
+          }
+        },
+        "reference" : "f9448049-8ef6-4039-a98e-c6898e4439b2",
+        "hasValidationError" : false,
+        "id" : "pbTextarea"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "text-danger"
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "$form.$invalid || dataValidity"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<h4>Les entêtes doivent respecter la spécification suivante:</h4>  <br>\nAssureur, Entite, Nom, Prenom, Genre, Filiation, NumPolice, NumReferent, NumCarte, RefCarte, StatutCard, DateNaissance, DebutConverture, FinCouverture, Non_Cov_Date, Langue"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "9c16b402-bfde-4b12-9cc8-519bfcc2acb7",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "$form.$invalid || !dataValidity"
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Données Membre"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "17d84405-82d0-458d-a61c-ed44db02fe71",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "$form.$invalid || !dataValidity"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "headers" : {
+            "type" : "constant",
+            "value" : [
+              "Assureur",
+              "Entite",
+              "Nom",
+              "Prenom",
+              "Genre",
+              "Filiation",
+              "NumPolice",
+              "NumReferent",
+              "NumCarte",
+              "RefCarte",
+              "StatutCard",
+              "DateNaissance",
+              "DebutConverture",
+              "FinCouverture",
+              "Non_Cov_Date",
+              "Langue"
+            ]
+          },
+          "content" : {
+            "type" : "expression",
+            "value" : "parsedExcel"
+          },
+          "columnsKey" : {
+            "type" : "constant",
+            "value" : [
+              "Assureur",
+              "Entite",
+              "Nom",
+              "Prenom",
+              "Genre",
+              "Filiation",
+              "NumPolice",
+              "NumReferent",
+              "NumCarte",
+              "RefCarte",
+              "StatutCard",
+              "DateNaissance",
+              "DebutConverture",
+              "FinCouverture",
+              "Non_Cov_Date",
+              "Langue"
+            ]
+          },
+          "selectedRow" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "striped" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "condensed" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "bordered" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "ca662174-369a-4926-b809-81cf307deb47",
+        "hasValidationError" : false,
+        "id" : "pbTable"
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "e77afee2-b8eb-4219-aee8-937f1434bfbf",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "b24d8cf7-2631-4212-a869-b341e29d609d",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "parsedExcel" : {
+      "type" : "expression",
+      "value" : [
+        "// Formattage de la donnée brute pour créer un tableau ligne par ligne",
+        "let formatedContent = $data.excelContent.split('\\n');",
+        "",
+        "// Element final contentant la donnée à inserer en BDD",
+        "let parsedContent = [];",
+        "",
+        "// On récupère la 1ère ligne qui constitue le header",
+        "// On la supprime du tableau pour garder la data uniquement",
+        "let headerList = formatedContent.shift().split('\\t');",
+        "",
+        "",
+        "// Création de l'objet final.",
+        "// On parcourt le contenu formatté ligne par ligne (sans le header désormais)",
+        "// Pour chaque ligne drute, on crée son équivalent en objet.",
+        "// On insère l'objet dans parsedContent.",
+        "formatedContent.map(row => {",
+        "    let formatedRow = row.split('\\t');",
+        "    let rowObject = {}",
+        "    headerList.map((header, index) => {",
+        "        rowObject[header] = formatedRow[index];",
+        "    });",
+        "    parsedContent.push(rowObject);",
+        "})",
+        "",
+        "return parsedContent;"
+      ],
+      "exposed" : false
+    },
+    "excelContent" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    },
+    "dataValidity" : {
+      "type" : "expression",
+      "value" : [
+        "return checkValidity();",
+        "",
+        "",
+        "function checkValidity(){",
+        "    let dataValidity = true;",
+        "    // Formattage de la donnée brute pour créer un tableau ligne par ligne",
+        "    let formatedContent = $data.excelContent.split('\\n');",
+        "    ",
+        "    // On récupère la 1ère ligne qui constitue le header",
+        "    // On la supprime du tableau pour garder la data uniquement",
+        "    let headerList = formatedContent.shift().split('\\t');",
+        "    ",
+        "    // Tableau contenant la specification",
+        "    let headerConfig = [",
+        "        \"Assureur\",\"Entite\",\"Nom\",\"Prenom\",",
+        "        \"Genre\",\"Filiation\",\"NumPolice\",\"NumReferent\",",
+        "        \"NumCarte\",\"RefCarte\",\"StatutCard\",\"DateNaissance\"",
+        "        ,\"DebutConverture\",\"FinCouverture\",\"Non_Cov_Date\",\"Langue\"];",
+        "    ",
+        "    dataValidity = headerConfig.every((header, index) => {",
+        "            return headerList[index].toLowerCase() === header.toLowerCase();",
+        "    });",
+        "    ",
+        "    return dataValidity;",
+        "}"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "5f1d9f74-ace5-42c6-a680-64fd60fe1ec2",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}

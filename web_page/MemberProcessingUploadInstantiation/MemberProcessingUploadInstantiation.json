@@ -1,0 +1,586 @@
+{
+  "modelVersion" : "2.0",
+  "id" : "MemberProcessingUploadInstantiation",
+  "name" : "MemberProcessingUploadInstantiation",
+  "lastUpdate" : 1626599949578,
+  "rows" : [
+    [
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "81344d9c-d29d-410a-b79c-aea3f910fb30",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "b37df480-ec02-41e3-9e96-9e508867c4a5",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Add Member File"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 2"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "a7bf8b5d-dcdc-417e-9ad0-1e0a9289b3f6",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "expression",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "File to upload"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation"
+                  },
+                  "url" : {
+                    "type" : "constant",
+                    "value" : "../API/formFileUpload"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "readExcelFile"
+                  },
+                  "errorContent" : {
+                    "type" : "variable",
+                    "value" : ""
+                  }
+                },
+                "reference" : "b324c243-bde7-4b5b-87e9-e8ae3db03eee",
+                "hasValidationError" : false,
+                "id" : "pbUpload"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "text-danger"
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "isValidFileWidgetValue"
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<b>Only excel files are accepted for this field</b>"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "a6e630e2-7b19-46bb-89da-23feb11f3255",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 8,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "isFileValide"
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Fichier pas valide"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "bc2e4b3a-9c9f-4365-94ec-ad6394f6ef4f",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "expression",
+                    "value" : "$form.$invalid || !isValidFileWidgetValue"
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Démarrer processus"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Start process"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataToSend" : {
+                    "type" : "constant",
+                    "value" : "formOutput"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : "/bonita"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "c8a27cfa-b739-4108-90f2-9270444dd9b8",
+                "hasValidationError" : false,
+                "id" : "pbButton"
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Debug"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "a8555b37-608d-4b7c-a680-87f73b635d9f",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "formOutput: {{ readExcelFile | json }}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "06f3dbda-22b7-42c3-af93-fc6183fde4d4",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Data: {{ excelData | json}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "b4e458a4-aee4-4546-8e11-30388a9fe13e",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "ac262d80-2cef-4e65-baf0-c363dbac2479",
+      "name" : "excelValidFile.js",
+      "type" : "js",
+      "order" : 1,
+      "external" : false
+    },
+    {
+      "id" : "f353da9c-2f0c-4ba0-8dbe-859f61a6bba7",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "0b4db7ec-0dc0-4924-b2e8-ad7605f621ca",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "isValidFileWidgetValue" : {
+      "type" : "expression",
+      "value" : [
+        "return angular.equals({}, $data.readExcelFile)",
+        "    || $data.readExcelFile.contentType == \"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\";"
+      ],
+      "exposed" : false
+    },
+    "isFileValide" : {
+      "type" : "expression",
+      "value" : [
+        "\r",
+        " src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js';\r",
+        " src='https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js';\r",
+        " src='https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js';\r",
+        "   \r",
+        "        var columnSpec = [\r",
+        "            \"Assureur\",\r",
+        "            \"Entite\",\r",
+        "            \"Nom\",\r",
+        "            \"Prenom\",\r",
+        "            \"Genre\",\r",
+        "            \"Filiation\",\r",
+        "            \"NumPolice\",\r",
+        "            \"NumReferent\",\r",
+        "            \"NumCarte\",\r",
+        "            \"RefCarte\",\r",
+        "            \"StatutCard\",\r",
+        "            \"DateNaissance\",\r",
+        "            \"DebutConverture\",\r",
+        "            \"FinCouverture\",\r",
+        "            \"Non_Cov_Date\",\r",
+        "            \"Langue\"\r",
+        "        ];\r",
+        "\r",
+        "        var headerCells = [...Array(columnSpec.length)].map((_, index) => {\r",
+        "            var headerCell = String.fromCharCode(index + 65) + '1';\r",
+        "            var value = columnSpec[index];\r",
+        "            return { key: headerCell, value: value }\r",
+        "        });\r",
+        "\r",
+        "        let isWorkbookValid;\r",
+        "\r",
+        "            computeFileAsync(readExcelFile, function (result) {\r",
+        "                isWorkbookValid = result;\r",
+        "                return isWorkbookValid;\r",
+        "\r",
+        "            });\r",
+        "\r",
+        "\r",
+        "\r",
+        "        function computeFileAsync(file, callback) {\r",
+        "            let fileReader = new FileReader();\r",
+        "            fileReader.readAsBinaryString(file);\r",
+        "            fileReader.onload = (event) => {\r",
+        "                let data = event.target.result;\r",
+        "                let workbook = XLSX.read(data, { type: \"binary\" });\r",
+        "\r",
+        "                callback(checkWorkbookValidity(workbook));\r",
+        "            }\r",
+        "        }\r",
+        "\r",
+        "        function checkWorkbookValidity(workbook) {\r",
+        "            var workbookValidity;\r",
+        "            workbook.SheetNames.forEach(sheet => {\r",
+        "                workbookValidity = headerCells.every(headerCell => {\r",
+        "                    let isheaderIncluded =\r",
+        "                        !!workbook.Sheets[sheet][headerCell.key] &&\r",
+        "                        workbook.Sheets[sheet][headerCell.key].v.toLowerCase() === headerCell.value.toLocaleLowerCase();\r",
+        "\r",
+        "                    if (!isheaderIncluded) return false;\r",
+        "                    return true;\r",
+        "                })\r",
+        "            });\r",
+        "            return workbookValidity;\r",
+        "        }"
+      ],
+      "exposed" : false
+    },
+    "readExcelFile" : {
+      "type" : "expression",
+      "value" : [
+        "return angular.continue($data.readExcelFile.content);"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "2e2f4678-5af3-4676-a99b-ef32ab75c5e2",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}

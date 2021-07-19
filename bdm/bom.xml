@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.12.1">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.MemberProcessing">
+            <fields>
+                <field type="INTEGER" length="255" name="id" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="userID" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="assureur" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="entite" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="nom" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="prenom" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="genre" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="filiation" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="numPolice" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="numReferent" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="numCarte" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="refCarte" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="statusCarte" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="dateNaissance" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="debutCouverture" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="finCouverture" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="no_cov_date" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="langue" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
